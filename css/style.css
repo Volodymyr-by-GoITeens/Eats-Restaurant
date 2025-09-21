@@ -14,6 +14,13 @@
     --main-font: "Montserrat";
     --copy-font: "Roboto";
 }
+body {
+    font-family: var(--main-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+}
 .container {
     display: flex;
     margin: 0 auto;
@@ -26,23 +33,27 @@
 .header-container {
     justify-content: space-between;
 }
+.header-logo {
+    display: inline-block;
+}
 .header-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 104px;
+    gap: 94px;
 }
 .header-vector {
     width: 150px;
     height: 65px;
 }
 .header-link {
-    font-family: var(--main-font);
     color: var(--text-color);
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.2px;
+    padding: 10px;
+    display: inline-block;
     text-align: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -55,59 +66,44 @@
 
 /*hero*/
 .hero {
-    background-image: linear-gradient(top to bottom, #17101099);
-    background-image: url(../images/dishes.jpg);
-    background-color: darkgray;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to bottom, #17101099, #17101099), url(../images/dishes.jpg) no-repeat center/cover;
     padding: 80px 0 162px;
 }
 .hero-container {
+    width: 1005px;
     flex-direction: column;
 }
 .hero-suptitle {
-    font-family: var(--main-font);
     color: var(--hero-color);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.1px;
-    padding-bottom: 1px;
     text-align: center;
 }
 .hero-title {
     font-family: var(--title-font);
     color: var(--title-color);
-    font-weight: 700;
     font-size: 58px;
     line-height: 80px;
+    padding: 10px 103px;
+    margin: 1px;
     letter-spacing: 0.2px;
     text-align: center;
 }
 .hero-subtitle {
-    font-family: var(--main-font);
     color: var(--hero-color);
     font-weight: 500;
-    font-size: 24px;
     line-height: 38px;
     letter-spacing: 0.2px;
     text-align: center;
-    padding-top: 5px;
+    padding: 15px 108px;
 }
-.hero-wrap {
-    margin-top: 78px;
+.hero-list {
+    margin-top: 54px;
     display: flex;
     justify-content: center;
     gap: 67px;
 }
 .hero-button {
     border: 1px solid var(--title-color);
-    font-family: var(--main-font);
     color: var(--title-color);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.1px;
     border-radius: 30px;
     padding: 16px;
     width: 235px;
@@ -115,7 +111,7 @@
     background-color: transparent;
     text-align: center;
 }
-.hero-link:first-child .hero-button {
+.hero-item:first-child .hero-button {
     background-color: var(--button-bg-color);
     border: none;
     width: 236px;
@@ -137,89 +133,68 @@
     color: var(--text-color);
     font-weight: 600;
     font-size: 44px;
-    line-height: 36px;
-    letter-spacing: 0.1px;
 }
-.work-content-wrap {
+.work-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 89px;
 }
-.work-text-wrap {
+.work-wrapper {
     text-align: left;
 }
 .work-text-suptitle {
-    font-family: var(--main-font);
     color: var(--suptitle-color);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.1px;
 }
 .work-text-title {
-    font-family: var(--main-font);
     color: var(--text-color);
-    font-weight: 700;
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2px;
 }
 .work-text-subtitle {
-    font-family: var(--main-font);
     color: var(--second-text-color);
     font-weight: 500;
-    font-size: 24px;
     line-height: 38px;
     letter-spacing: 0.2px;
 }
 
 /*order*/
 .order {
-    background-image: linear-gradient(top to bottom, #252B4266);
-    background-image: url(../images/kitchen.jpg);
-    background-color: darkgray;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to bottom, #252B4266, #252B4266), url(../images/kitchen.jpg) no-repeat center/cover;
     padding: 141px 0 130px;
 }
 .order-container {
     flex-direction: column;
 }
 .order-title {
-    font-family: var(--main-font);
     color: var(--title-color);
-    font-weight: 700;
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2px;
     text-align: center;
 }
 .order-subtitle {
-    font-family: var(--main-font);
     color: var(--title-color);
     font-weight: 500;
-    font-size: 24px;
     line-height: 38px;
     letter-spacing: 0.2px;
     padding: 10px 0 59px;
     text-align: center;
 }
-.order-wrap {
+.order-list {
     display: flex;
     justify-content: center;
     gap: 16px;
 }
-.order-link:first-child .order-button {
+.order-item:first-child .order-button {
     border-color: var(--active-color);
     background-color: var(--active-color);
     padding: 16px 31px;
     box-shadow: 0px 10px 30px 0px #B7322733;
 }
 .order-button {
-    font-family: var(--main-font);
     color: var(--title-color);
-    font-weight: 700;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.2px;
@@ -239,6 +214,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.footer-logo {
+    display: inline-block;
+}
 .footer-vector {
     width: 150px;
     height: 65px;
@@ -246,9 +224,7 @@
 .footer-copyright {
     font-family: var(--copy-font);
     color: var(--copyright-color);
-    font-weight: 700;
     font-size: 12px;
     line-height: 18px;
-    letter-spacing: 0.1px;
     text-align: right;
 }
