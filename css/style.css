@@ -103,6 +103,11 @@ body {
 }
 .hero-button {
     border: 1px solid var(--title-color);
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;   
+    letter-spacing: 0.1px;
     color: var(--title-color);
     border-radius: 30px;
     padding: 16px;
@@ -162,7 +167,7 @@ body {
 /*order*/
 .order {
     background: linear-gradient(to bottom, #252B4266, #252B4266), url(../images/kitchen.jpg) no-repeat center/cover;
-    padding: 141px 0 130px;
+    padding: 131px 0 130px;
 }
 .order-container {
     flex-direction: column;
@@ -195,6 +200,8 @@ body {
 }
 .order-button {
     color: var(--title-color);
+    font-family: var(--main-font);
+    font-weight: 700;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.2px;
